@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.post {
+    background-color: #fff;
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    font-size: 14px;
+    color: #333;
+    /* Increase vertical space for a taller post */
+    padding-bottom: 20px;
+}
+
+/* Header Section */
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.post-header .fa-html5 {
+    font-size: 24px;
+    color: #f16529;
+}
+
+.username {
+    font-weight: 500;
+}
+
+.fa-ellipsis-h {
+    font-size: 20px;
+}
+
+/* Image Section */
+.post-image {
+    width: 100%;
+    height: 300px; /* Adjusted to make the image taller */
+    object-fit: cover; /* Ensures the image fills the area nicely */
+    display: block;
+}
+
+/* Action Buttons */
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px; /* Increased padding for spacing */
+}
+
+.post-actions .fa-heart,
+.post-actions .fa-comment,
+.post-actions .fa-paper-plane,
+.post-actions .fa-bookmark {
+    font-size: 20px;
+    color: #555;
+    margin-right: 10px;
+}
+
+.fa-bookmark {
+    margin-left: auto;
+}
+
+/* Likes Section */
+.post-likes {
+    padding: 0 10px;
+    font-weight: 500;
+    margin-bottom: 10px; /* Adds space below likes */
+}
+
+/* Description Section */
+.post-description {
+    padding: 10px;
+    line-height: 1.8; /* Adjusted for better readability */
+}
